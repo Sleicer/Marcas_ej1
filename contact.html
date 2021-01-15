@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex" />
+  <title>My Weblog</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body style="font:normal medium 'Gill Sans','Gill Sans MT','Goudy Bookletter 1911','Linux Libertine O','Liberation Serif',Candara,serif;padding:0;margin:0 auto;width:40em;line-height:1.75;word-spacing:0.1em">
+
+  <div id=header style="background:black;color:white;margin:0;padding:1.75em 0">
+    <h1 style="font-size:medium;letter-spacing:1em;text-align:center;margin:0">My Weblog</h1>
+    <p class="tagline" style="text-align:center;font-size:medium;line-height:2.154">A lot of effort went into making this effortless.</p>
+
+  </div>
+  <div id=nav style="background:black;color:white;">
+    <ul style="margin:0;padding:0 1em 0 0;text-align:center">
+      <li style="display:inline;padding-left:1em"><a style="color:white;" href="My Weblog.html">home</a></li>
+      <li style="display:inline;padding-left:1em"><a style="color:white;" href="blog.html">blog</a></li>
+      <li style="display:inline;padding-left:1em"><a style="color:white;" href="gallery.html">gallery</a></li>
+      <li style="display:inline;padding-left:1em"><a style="color:white;" href="contact.html">contact</a></li>
+    </ul>
+  </div>
+  <form id="formulario" action="www.google.es" method="post" autocomplete="on">
+    Nombre:<input type="text" autocomplete="on" required="true"/> <br/><br/>
+    Apellidos:<input type="text" autocomplete="on" required="true"/> <br/><br/>
+    Contraseña: <input type="password" required="true" pattern="\d{1}([a-z]|[A-Z]|\d){6,}[A-Z]{1}"/> <br/><br/>
+    Casilla de verificación: <input type="checkbox"/> <br/><br/>
+    Sexo: <br/><br/>
+    Masculino <input type="radio"/> <br/><br/>
+    Femenino <input type="radio"/> <br/><br/>
+    Email: <input type="email" required="email" autofocus placeholder="Agapito@msn.com" required="true" autocomplete="on"/> <br/><br/>
+    Selección de archivo: <input type="file"/> <br/><br/>
+    Elige un color: <select>
+        <option></option>
+        <option>Blanco</option>
+        <option>Negro</option>
+        <option>Azul</option>
+        <option>Rojo</option>
+        <option>Verde</option>
+    </select> <br/><br/>
+    <label for="ciudad">Elige una ciudad de la lista:</label>
+    <input list="ciudades" name="ciudad" id="ciudad" required="true">
+    <datalist id="ciudades">
+      <option value="Madrid">
+      <option value="Barcelona">
+      <option value="Valencia">
+      <option value="Oviedo">
+      <option value="Murcia">
+    </datalist> <br/><br/>
+    <label for="nota">Nota de su ultimo viaje (0-10):</label>
+    <input type="number" id="nota" name="nota"
+       min="0" max="10"> <br/><br/>
+    Comentarios: <br/><textarea>
+    </textarea> <br/><br/>
+    Botón de envío: <input type="submit"/> <br/><br/>
+    Reset: <input type="reset"/> <br/><br/>
+    <progress id="formulario" value="32" min="0" max="100"></progress>
+</form>
+</body>
+</html>
